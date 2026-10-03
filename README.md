@@ -92,7 +92,7 @@ The app is ad-hoc signed but not notarized, so open it the first time with
 right-click **Taskhop.app → Open → Open**. It runs as a menu-bar app (no Dock
 icon); the global shortcut is Cmd+Option+T.
 
-## Releasing a new version (free checklist)
+<!-- ## Releasing a new version (free checklist)
 
 1. Bump `version` in both `package.json` and `src-tauri/tauri.conf.json`.
    Installing a new version over the old one keeps users' data.
@@ -105,7 +105,7 @@ icon); the global shortcut is Cmd+Option+T.
    - Windows (PowerShell): `Get-FileHash .\Taskhop_0.1.0_x64-setup.exe`
    - macOS: `shasum -a 256 Taskhop_0.1.0_universal.dmg`
 6. In the repository settings, enable **Private vulnerability reporting**
-   (Settings → Code security) so `SECURITY.md` works.
+   (Settings → Code security) so `SECURITY.md` works. -->
 
 <!-- ### Removing the "unknown publisher" warnings without paying
 
