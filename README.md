@@ -128,3 +128,12 @@ icon); the global shortcut is Cmd+Option+T.
 - [Security policy](SECURITY.md): report vulnerabilities privately.
 - Taskhop is not affiliated with or endorsed by Google. Gemini is a trademark
   of Google LLC.
+
+### Name and logo
+
+The code is MIT-licensed, so you're welcome to fork it, change it, and share
+your version. The **Taskhop** name and logo, though, identify this project.
+If you publish a modified version, please give it a different name and logo,
+so people don't mistake it for the official app or think I made it. Official
+releases are only published on this repository's
+[Releases page](https://github.com/MoebiusD9/taskhop/releases).
