@@ -107,7 +107,7 @@ icon); the global shortcut is Cmd+Option+T.
 6. In the repository settings, enable **Private vulnerability reporting**
    (Settings → Code security) so `SECURITY.md` works.
 
-### Removing the "unknown publisher" warnings without paying
+<!-- ### Removing the "unknown publisher" warnings without paying
 
 - **Windows:** [SignPath Foundation](https://signpath.org) offers free code
   signing for open-source projects (you apply, and builds are signed in CI).
@@ -115,7 +115,7 @@ icon); the global shortcut is Cmd+Option+T.
   app, and Microsoft currently doesn't charge individual developers for an
   account. Check both sites for their current terms.
 - **macOS:** notarization requires the paid Apple Developer Program; without
-  it, users open the app once with right-click → Open.
+  it, users open the app once with right-click → Open. -->
 
 ## License and privacy
 
