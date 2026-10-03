@@ -1,0 +1,8 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64">
+  <!-- Taskhop logo: a task (filled dot) hops to tomorrow (open dot). Used for large icon sizes. -->
+  <rect x="4" y="4" width="56" height="56" rx="16" fill="#8E3B6B"/>
+  <circle cx="20" cy="42" r="7" fill="#F7F4F6"/>
+  <circle cx="44" cy="42" r="6" fill="none" stroke="#F7F4F6" stroke-width="4"/>
+  <path d="M21 30 Q32 12 43 30" fill="none" stroke="#F7F4F6" stroke-width="4.5" stroke-linecap="round"/>
+  <path d="M37 28 L43 31 L45 24" fill="none" stroke="#F7F4F6" stroke-width="4.5" stroke-linecap="round" stroke-linejoin="round"/>
+</svg>

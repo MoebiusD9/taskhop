@@ -1,0 +1,37 @@
+{
+  "name": "taskhop",
+  "private": true,
+  "version": "0.1.0",
+  "description": "A small always-on-top to-do widget for Windows and macOS",
+  "author": "MoebiusD9",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/MoebiusD9/taskhop.git"
+  },
+  "type": "module",
+  "packageManager": "pnpm@11.25.0",
+  "scripts": {
+    "dev": "vite",
+    "build": "vue-tsc --noEmit && vite build",
+    "preview": "vite preview",
+    "tauri": "tauri",
+    "notices": "node scripts/notices.mjs"
+  },
+  "dependencies": {
+    "@formkit/auto-animate": "^0.10.0",
+    "@tauri-apps/api": "^2.12.1",
+    "@tauri-apps/plugin-sql": "^2.5.0",
+    "pinia": "^4.0.3",
+    "vue": "^3.5.43"
+  },
+  "devDependencies": {
+    "@tailwindcss/vite": "^4.3.3",
+    "@tauri-apps/cli": "^2.12.1",
+    "@vitejs/plugin-vue": "^6.0.9",
+    "tailwindcss": "^4.3.3",
+    "typescript": "~5.9.3",
+    "vite": "^8.3.2",
+    "vue-tsc": "^3.3.12"
+  }
+}

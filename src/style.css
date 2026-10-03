@@ -1,0 +1,84 @@
+@import "tailwindcss";
+
+/*
+ * Three colors ("Plum"): paper (background), ink (text) and hop (accent).
+ * Every other shade below is a lighter or darker step of ink. The values flip
+ * for dark mode, so components never need `dark:` classes.
+ *
+ * Theme: follows the system by default; Settings → Appearance can force it by
+ * setting data-theme="light" or "dark" on <html> (see src/lib/theme.ts).
+ */
+:root {
+  color-scheme: light;
+  --paper: #f7f4f6;
+  --field: #fbf9fa; /* inputs, slightly lighter than paper */
+  --wash: #efe9ed; /* hover and selected rows */
+  --line: #e8e1e6; /* hairlines and badges */
+  --line-strong: #d9cfd6; /* control borders */
+  --ink: #2e2430;
+  --ink-2: #6f6670; /* secondary text, icons */
+  --ink-3: #aba2a9; /* placeholders, completed tasks */
+  --hop: #8e3b6b;
+  --on-hop: #f7f4f6; /* text on a hop background */
+}
+
+@media (prefers-color-scheme: dark) {
+  :root:not([data-theme="light"]) {
+    color-scheme: dark;
+    --paper: #1e1a1d;
+    --field: #262125;
+    --wash: #2a2428;
+    --line: #332c31;
+    --line-strong: #453c42;
+    --ink: #e8e0e6;
+    --ink-2: #a0969d;
+    --ink-3: #6e646b;
+    --hop: #e59ac4;
+    --on-hop: #1e1a1d;
+  }
+}
+
+:root[data-theme="dark"] {
+  color-scheme: dark;
+  --paper: #1e1a1d;
+  --field: #262125;
+  --wash: #2a2428;
+  --line: #332c31;
+  --line-strong: #453c42;
+  --ink: #e8e0e6;
+  --ink-2: #a0969d;
+  --ink-3: #6e646b;
+  --hop: #e59ac4;
+  --on-hop: #1e1a1d;
+}
+
+/* Exposes the tokens as Tailwind colors: bg-paper, text-ink-2, border-line, outline-hop… */
+@theme inline {
+  --color-paper: var(--paper);
+  --color-field: var(--field);
+  --color-wash: var(--wash);
+  --color-line: var(--line);
+  --color-line-strong: var(--line-strong);
+  --color-ink: var(--ink);
+  --color-ink-2: var(--ink-2);
+  --color-ink-3: var(--ink-3);
+  --color-hop: var(--hop);
+  --color-on-hop: var(--on-hop);
+}
+
+html,
+body,
+#app {
+  height: 100%;
+  overflow: hidden;
+}
+
+body {
+  background: var(--paper);
+  color: var(--ink);
+}
+
+/* Errors use the accent color, so a symbol makes them clear without relying on color alone. */
+[role="alert"]::before {
+  content: "⚠ ";
+}
