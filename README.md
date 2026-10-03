@@ -4,6 +4,16 @@ A small always-on-top to-do widget for Windows and macOS: plan **Today** and
 **Tomorrow**, and catch **Skipped** tasks. Built with Tauri 2, Vue 3,
 TypeScript, Pinia, Tailwind CSS and SQLite.
 
+## Install
+
+Download the latest installer from the
+[Releases page](https://github.com/MoebiusD9/taskhop/releases) and run it.
+Nothing else is needed: the database (SQLite) is built into Taskhop.
+
+- **Windows 10/11:** uses Microsoft WebView2, which Windows already includes
+  (the installer downloads it if it's missing).
+- **macOS 11+:** no extra software needed.
+
 ## Development
 
 Prerequisites: Node 22+, pnpm, Rust (stable), and on Windows the
